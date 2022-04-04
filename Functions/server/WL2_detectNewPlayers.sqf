@@ -52,9 +52,9 @@ while {!BIS_WL_missionEnd} do {
 						{
 							if (_players < 6) then
 							{
-								BIS_WL_maxSubordinates = 20;
+								BIS_WL_maxSubordinates = 35;
 								publicVariable "BIS_WL_maxSubordinates";
-								systemchat "Player count at less than 6. Max AI now at 20; full company size!";
+								systemchat "Player count at less than 6. Max AI now at 30; full platoon size!";
 							}
 						} 
 					} 
