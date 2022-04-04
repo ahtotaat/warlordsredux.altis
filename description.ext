@@ -24,7 +24,7 @@ ReviveUnconsciousStateMode = 0;         //0: basic, 1: advanced, 2: realistic
 ReviveRequiredTrait = 0;                //0: none, 1: medic trait is required
 ReviveRequiredItems = 2;                //0: none, 1: medkit, 2: medkit or first aid kit
 ReviveRequiredItemsFakConsumed = 1;     //0: first aid kit is not consumed upon revive, 1: first aid kit is consumed
-ReviveDelay = 15;                        //time needed to revive someone (in secs)
+ReviveDelay = 5;                        //time needed to revive someone (in secs)
 ReviveMedicSpeedMultiplier = 2;         //speed multiplier for revive performed by medic
 ReviveForceRespawnDelay = 3;            //time needed to perform force respawn (in secs)
 ReviveBleedOutDelay = 180;              //unconscious state duration (in secs)
@@ -158,7 +158,7 @@ class Params
 		title = $STR_A3_WL_param_saving;
 		values[] = {1, 0};
 		texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
-		default = 0;
+		default = 1;
 		isBool = 1;
 	};
 	
@@ -175,6 +175,6 @@ class Params
 		title = $STR_A3_WL_param_fog_of_war;
 		values[] = {0, 1, 2};
 		texts[] = {$STR_DISP_OPT_DISABLED, $STR_A3_WL_param_fog_of_war_value1, $STR_A3_WL_param_fog_of_war_value2};
-		default = 1;
+		default = 2;
 	};
 };
