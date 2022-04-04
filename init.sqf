@@ -1,3 +1,14 @@
+slx_xeh_compile_new = nil;
+
+// Tactical Combat Link A.I Mod
+TCL_Path = "TCL_System\";
+TCL_Initialize = True;
+call compile preprocessFileLineNumbers (TCL_Path+"TCL_Preprocess.sqf");
+//TCL_Debug = [False, False, False, False, True, True, False];
+
+
+
+
 startLoadingScreen [""];
 
 BIS_fnc_WL2_announcer = compile preprocessFileLineNumbers "Functions\client\WL2_announcer.sqf";
@@ -143,9 +154,5 @@ if ( hasInterface ) then
 	[] spawn KSLOOP_fnc_unflipVehicleAddAction;
 };
 //End of Vehicle unflip
-
-//welcome test 
-[] execVM "welcome.sqf";
-//end welcome section 
 
 [] call BIS_fnc_WL2_initCommon;
